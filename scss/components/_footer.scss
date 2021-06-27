@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right,black,rgba(0, 0, 0, 0.5));
+    padding-bottom: 10px;
+
+    h1{
+        text-align: left;
+        color: white;
+        font-size: 2em;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 5px;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+        font-weight: 600;
+    }
+    div{
+        display: flex;
+        justify-content: flex-start;
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            
+        }
+    }
+}

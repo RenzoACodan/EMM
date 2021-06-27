@@ -1,0 +1,22 @@
+/* Header */
+@import 'components/header.scss';
+/* Scrollspy */
+@import 'components/scrollspy.scss';
+/* Footer */
+@import 'components/footer.scss';
+/* Integrantes */
+@import 'components/integrantes.scss';
+/* Historia */
+@import 'components/historia.scss';
+/* Discografía */
+@import 'components/discografia.scss';
+/* Contacto*/
+@import 'components/contacto.scss';
+
+/* Body */
+body{
+    background-image: url(../images/pared.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

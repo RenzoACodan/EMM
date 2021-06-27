@@ -1,0 +1,74 @@
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        transform: skewx(20deg);
+        letter-spacing: 5px;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.5) ;
+        font-size: 2rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 5%;
+        transform: skewX(-20deg);
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            margin: 0;
+            transform: skewX(20deg);
+            justify-content: flex-end;
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+
+            h1 {
+                display: none;
+                font-size: 1rem;
+                text-align: center;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+                letter-spacing: normal;
+                position: absolute;
+                transform: skewX(0deg);
+            }
+
+
+            &:hover {
+                .byn {
+                    display: none;
+                }
+
+                .color {
+                    display: block;
+                }
+
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+.color {
+    display: none;
+}
