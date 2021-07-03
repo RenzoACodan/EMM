@@ -9,29 +9,27 @@
         font-weight: 600;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
-        transform: skewx(20deg);
         letter-spacing: 5px;
-        border-bottom: solid 1px rgba(255, 255, 255, 0.5) ;
+        border-bottom: solid 1px rgb(0, 255, 242);
         font-size: 2rem;
     }
 
     div {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 5%;
-        transform: skewX(-20deg);
+        justify-content: space-around;
+        margin: 10px 0;
         div {
             display: flex;
             flex-direction: column;
-            width: 15%;
+            width: 20%;
             margin: 0;
-            transform: skewX(20deg);
             justify-content: flex-end;
+            
             img {
                 width: 100%;
                 height: 100%;
-                
+
             }
 
             h1 {
@@ -47,7 +45,12 @@
                 padding: 0;
                 letter-spacing: normal;
                 position: absolute;
-                transform: skewX(0deg);
+                width: 20%;
+                padding: 5px 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-top: solid 1px rgb(0, 255, 242);
+                border-bottom: solid 1px rgb(0, 255, 242);
             }
 
 
@@ -67,6 +70,40 @@
         }
     }
 
+    @media only screen and (max-width:768px) {
+
+        div {
+            display: flex;
+            flex-direction: column;
+            div{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: flex-start;
+                margin: 5px 0;
+                img{
+                    width: 40%;
+                    border-radius: 5px;
+                }
+                h1{
+                    display: inline;
+                    position: relative;
+                    width: 60%;
+                    height: 20%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    text-align: right;
+                    font-size: 1.5rem;
+                    padding-right: 5px;
+                }
+            }
+        }
+        .color{
+            display: block;
+        }
+        .byn{
+            display: none;
+        }
+    }
 }
 
 .color {

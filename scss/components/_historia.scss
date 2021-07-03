@@ -1,15 +1,45 @@
-.textoHistoria{
+.textoHistoria {
     color: white;
     font-size: 1rem;
 }
 
-.divImgHist{
+.divImgHist {
     margin: 0;
     padding: 0;
     height: 100%;
+    .img1{
+      
+      margin-top: 10px;
+      width: 100%;  
+    }
+    .img2{
+        margin-top: 10px;
+    }
+    
 }
 
-.historia{
+.historia {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 10px;
+    padding: 0 20px;
+    div{
+        height: 40%;
+        img{
+           border-radius: 5px; 
+        }
+    }
+    @media only screen and (max-width:768px) {
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            padding: 5px 0;
+            div{
+              width: 100%; 
+              margin: 0;
+            }
+            
+        }
+
+
+    }
 }
